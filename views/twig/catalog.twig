@@ -1,0 +1,7 @@
+<h2>каталог товаров</h2>
+{% for product in products %}
+    <h4><a href="?c=product&a=card&id={{product.id}}">{{product.name}}
+    <img src="{{product.img}}" alt="pic" height="120px" width="200px"></a></h4>
+    <p>{{product.description}}</p>
+    <p>Стоимость: {{product.price}} руб.</p><hr>
+    {% endfor %}
